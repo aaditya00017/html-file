@@ -359,7 +359,7 @@ Aditya ❤️ Khushboo
 </h1>
 
 <p style="font-size:1.3rem;">
-Thank you for being my favorite person,
+You are my favorite person,
         my safe place,
         and one of the most beautiful parts of my life. ❤️
 
@@ -414,9 +414,13 @@ So this time, I wanted you to hear them from me. ❤️
 </audio>
 
 <script>
-    function startExperience(){
+   function startExperience(){
 
-    document.getElementById("bgMusic").play();
+    const bgMusic = document.getElementById("bgMusic");
+
+    bgMusic.volume = 0.5;   // 50% volume
+
+    bgMusic.play();
 
     document.getElementById("welcomeScreen").style.opacity = "0";
 
